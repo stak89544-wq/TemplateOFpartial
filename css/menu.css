@@ -1,0 +1,13 @@
+.menu-card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    transition: transform 0.25s, box-shadow 0.25s;
+}
+.menu-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-hover);
+}
+.menu-card .card-img-top {
+    object-fit: cover;
+    height: 200px;
+}

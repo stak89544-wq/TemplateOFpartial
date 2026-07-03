@@ -1,0 +1,63 @@
+.hero-section {
+    min-height: 80vh;
+    background: linear-gradient(135deg, #ffe8d0 0%, #ffd9b3 100%);
+    padding: 4rem 0;
+    transition: background 0.3s;
+}
+[data-bs-theme="dark"] .hero-section {
+    background: linear-gradient(135deg, #2d1f14 0%, #3d2b1f 100%);
+}
+.hero-text .highlight { color: var(--highlight); }
+.tagline {
+    font-size: 1.2rem;
+    color: var(--text-muted);
+    border-left: 4px solid var(--highlight);
+    padding-left: 1rem;
+}
+.hero-image {
+    box-shadow: var(--shadow);
+    transition: transform 0.4s, box-shadow 0.4s;
+}
+.hero-image:hover {
+    transform: scale(1.02);
+    box-shadow: var(--shadow-hover);
+}
+.service-card, .news-card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    transition: transform 0.25s, box-shadow 0.25s, background-color 0.3s;
+}
+.service-card:hover, .news-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-hover);
+}
+.list-group-item {
+    background-color: transparent !important;
+    color: var(--text-primary);
+    border-color: var(--border-color);
+}
+.hover-zoom {
+    transition: transform 0.3s, filter 0.3s;
+}
+.hover-zoom:hover {
+    transform: scale(1.04);
+    filter: brightness(1.06);
+}
+.carousel-item img {
+    object-fit: cover;
+    height: 400px;
+}
+@media (max-width: 768px) {
+    .carousel-item img { height: 250px; }
+}
+.carousel-caption {
+    background: rgba(0,0,0,0.5);
+    border-radius: 12px;
+    padding: 1rem;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 50%;
+    padding: 1.2rem;
+}
