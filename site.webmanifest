@@ -1,0 +1,15 @@
+{
+  "name": "Pechurica La Fe",
+  "short_name": "Pechurica",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#fef8f0",
+  "theme_color": "#e07b39",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "32x32",
+      "type": "image/x-icon"
+    }
+  ]
+}

@@ -8,6 +8,12 @@
     <meta name="author" content="Pechurica La Fe">
     <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍗</text></svg>">
     <title>Pechurica La Fe - Contacto</title>
+    <meta property="og:title" content="Pechurica La Fe - Contacto">
+    <meta property="og:description" content="Contacta con Pechurica La Fe por teléfono, correo o redes sociales.">
+    <meta property="og:image" content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSdgOxDTnvf4SN_ehoNzpgIWKS1fYFSvLu2y1eiVcxVg&s=10">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
@@ -69,6 +75,24 @@
                                     <a href="#" class="social-icon" onclick="showAlert('Redes Sociales','Conéctate con nosotros en WhatsApp.'); return false;"><i class="bi bi-whatsapp"></i></a>
                                     <a href="#" class="social-icon" onclick="showAlert('Redes Sociales','Síguenos en TikTok para ver nuestros procesos.'); return false;"><i class="bi bi-tiktok"></i></a>
                                 </div>
+                                <!-- Formulario de contacto (validado por js/script.js) -->
+                                <form id="contactForm" class="mt-4">
+                                    <div class="mb-3">
+                                        <label for="name" class="form-label">Nombre</label>
+                                        <input type="text" class="form-control" id="name" name="name" placeholder="Tu nombre" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="email" class="form-label">Correo</label>
+                                        <input type="email" class="form-control" id="email" name="email" placeholder="tu@correo.com" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="message" class="form-label">Mensaje</label>
+                                        <textarea class="form-control" id="message" name="message" rows="3" placeholder="Escribe tu mensaje..." required></textarea>
+                                    </div>
+                                    <div class="d-grid">
+                                        <button type="submit" class="btn btn-success">Enviar mensaje</button>
+                                    </div>
+                                </form>
                             </div>
                             <div class="col-md-6">
                                 <div class="bg-light p-4 rounded-3 text-center">
